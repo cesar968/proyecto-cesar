@@ -47,9 +47,14 @@ header h1, h2{
 /* ----- Efecto sombra ---- */
 .sombra-card{
     box-shadow: -15px 15px 15px 5px red;
+    transition-duration: 1s;
 }
 .sombra-card-right{
     box-shadow: 15px 15px 15px 5px red;
+}
+.sombra-a{
+    box-shadow: 0px 6px 9px #ff0000;
+    transition-duration: 1s;
 }
 .sombra-carousel{
     box-shadow: -3px -3px 3px grey;
