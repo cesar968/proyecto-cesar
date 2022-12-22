@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ferreteria Cesar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
@@ -24,19 +24,12 @@
             <div>
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <ul class="navbar-nav me-auto my-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                                    <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Productos</a>
+                                    <a class="nav-link" aria-current="page" href="./pages/productos.html">Productos</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Marcas</a>
@@ -64,11 +57,11 @@
         <div class="container">
 
             <!-- Section Ofertas mobile -->
-            
-            <section class="d-lg-none d-flex justify-content-center align-items-center pb-1 ">
-                <div class="row">
-                    <h3 class="text-center">Ofertas</h3>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+
+            <section class="container d-lg-none mt-4">
+                <div class="d-flex justify-content-center flex-column sombra-carousel ">
+                    <h3 class="text-center color-title-card">Ofertas</h3>
+                    <div id="carouselExampleIndicators" class="carousel slide width-carousel" data-bs-ride="true">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -97,8 +90,8 @@
                                     class="d-block w-100" alt="...">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev">
+                        <button class="carousel-control-prev color-icon-carousel" type="button"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
@@ -114,10 +107,10 @@
                 </div>
             </section>
             <!-- Section Novedades mobile -->
-            <section class="d-lg-none d-flex justify-content-center align-items-center">
-                <div>
-                    <h3 class="text-center">Novedades</h3>
-                    <div id="carouselnovedades" class="carousel slide" data-bs-ride="true">
+            <section class="container d-lg-none mt-4">
+                <div class=" d-flex justify-content-center flex-column sombra-carousel ">
+                    <h3 class="text-center color-title-card">Novedades</h3>
+                    <div id="carouselnovedades" class="carousel slide width-carousel" data-bs-ride="true">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselnovedades" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -163,10 +156,10 @@
                 </div>
             </section>
             <!-- Section Lo mas vendido mobile -->
-            <section class="d-lg-none d-flex justify-content-center align-items-center">
-                <div>
-                    <h3 class="text-center">Lo mas vendido</h3>
-                    <div id="carousellomasvendido" class="carousel slide" data-bs-ride="true">
+            <section class="container d-lg-none mt-4">
+                <div class=" d-flex justify-content-center flex-column sombra-carousel ">
+                    <h3 class="text-center color-title-card">Lo mas vendido</h3>
+                    <div id="carousellomasvendido" class="carousel slide width-carousel" data-bs-ride="true">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carousellomasvendido" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -210,33 +203,32 @@
                     </div>
                 </div>
             </section>
-
             <!-- Imagenes de marcas en Desktop -->
-            <div class="row d-none justify-content-center sombra-card">
-                <div class="d-none d-lg-block col-lg-2 m-3">
+            <div class="row d-none d-lg-flex justify-content-center sombra-card">
+                <div class="col-lg-2 m-3">
                     <img class="img-fluid" src="./imagenes/imagenes-marcas/barovo-logo1.jpg"
                         alt="Logo de la marca Barovo, productos de herramientas electricas">
                 </div>
-                <div class="d-none d-lg-block col-lg-2 m-3">
+                <div class="col-lg-2 m-3">
                     <img class="img-fluid" src="./imagenes/imagenes-marcas/kushiro-logo1.png"
                         alt="Logo de la marca kushiro, empresa importadora de china">
                 </div>
-                <div class="d-none d-lg-block col-lg-2 m-3">
+                <div class=" col-lg-2 m-3">
                     <img class="img-fluid" src="./imagenes/imagenes-marcas/imagen-bahco1.png"
                         alt="Logo de la marca Bahco, empresa lider desde hace muchos años">
                 </div>
-                <div class="d-none d-lg-block col-lg-2 m-3">
+                <div class=" col-lg-2 m-3">
                     <img class="img-fluid" src="./imagenes/imagenes-marcas/wembley-logo1.png"
                         alt="Logo de la marca wembley, segunda marca de Bremen">
                 </div>
-                <div class="d-none d-lg-block col-lg-2 m-3">
+                <div class=" col-lg-2 m-3">
                     <img class="img-fluid" src="./imagenes/imagenes-marcas/bremen-logo1.jpg"
                         alt="Logo de la marca bremen, herramientas de calidad superior">
                 </div>
             </div>
             <!-- Section Ofertas Desktop -->
-            <section class="row mt-5 pb-1  d-none d-lg-flex justify-content-center text-center sombra-card-right">
-                <h3 class="text-center mb-3">Ofertas</h3>
+            <section class="row mt-5 pb-1 d-none d-lg-flex justify-content-center text-center sombra-card-right">
+                <h3 class="text-center mb-3 color-title-card">Ofertas</h3>
                 <div class="card col-lg-2 align-items-center me-3" style="width: 14rem">
                     <img src="./imagenes/imagenes-herramientas_electricas/caladora.jpg" class="card-img-top img-fluid"
                         alt="...">
@@ -292,7 +284,7 @@
             </section>
             <!-- Section Novedades Desktop -->
             <section class="row mt-5 pb-1 d-none d-lg-flex justify-content-center text-center sombra-card-right">
-                <h3 class="text-center mb-3">Novedades</h3>
+                <h3 class="text-center mb-3 color-title-card">Novedades</h3>
                 <div class="card col-lg-2 me-3 align-items-center text-center" style="width: 14rem">
                     <img src="./imagenes/imagenes-herramientas_manuales/llaves-torx.jpg" class="card-img-top img-fluid"
                         alt="...">
@@ -348,7 +340,7 @@
             </section>
             <!-- Section Lo mas vendido Desktop -->
             <section class="row mt-5 pb-1 d-none d-lg-flex justify-content-center text-center sombra-card-right">
-                <h3 class="text-center mb-3">Novedades</h3>
+                <h3 class="text-center mb-3 color-title-card">Lo mas vendido</h3>
                 <div class="card col-lg-2 me-3 align-items-center text-center" style="width: 14rem">
                     <img src="./imagenes/imagenes-bazar/cuchilla-acero.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
@@ -408,8 +400,8 @@
             <!-- Informacion extra -->
             <div class="row">
                 <div class="d-flex flex-column align-items-center align-items-lg-start col-lg-6">
-                    <img src="./imagenes/logo ferreteria.png" class="w-25" alt="">
-                    <span>Cesar Rege © 2022, todos los derechos reservados.</span>
+                    <img src="./imagenes/logo ferreteria.png" class="w-25 mt-lg-2" alt="">
+                    <span class="mt-lg-4">Cesar Rege © 2022, todos los derechos reservados.</span>
                 </div>
                 <!-- Redes sociales -->
                 <div class="col-lg-6">
