@@ -6,7 +6,7 @@
 a{
     text-decoration: none;
 }
-/* ---- Header para todos los html ---- */
+/* ---- HEADER PARA TODOS LOS HTML ---- */
 header{
     background-color: #ff0000 ;
     color: #ffffff;
@@ -26,17 +26,18 @@ header h1, h2{
 }
 
 
-/* ----- Color universal de fondo ----- */
+/* ----- COLOR PARA FONDOS ----- */
 .color{
-    background-color: red;
+    background-color: #ff0000;
 }
 
-/* ----- Animaciones ------ */
+/* ----- ANIMACIONES ------ */
 .mover{
     animation-name: efecto-marcas;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     position: relative;
+    animation-direction: alternate;
 }
 @keyframes efecto-marcas {
     0% {width: 100px;}
@@ -51,7 +52,7 @@ header h1, h2{
 }
 .title-universal{
     text-decoration: underline;
-    text-shadow: 1px 1px 2px black, 0 0 25px rgb(136, 46, 5), 0 0 5px white;
+    text-shadow: 1px 1px 2px #000000, 0 0 25px rgb(136, 46, 5), 0 0 5px white;
 }
 .color-title-card{
     text-shadow: 1px 1px 4px #917070, 0 0 25px rgb(160, 160, 170), 0 0 5px rgb(212, 203, 203);
@@ -61,7 +62,7 @@ header h1, h2{
     border-radius: 15px;
     transition-duration: 1s;
 }
-/* ----- Efecto sombra ---- */
+/* ----- Efecto SOMBRA ---- */
 .sombra-card{
     box-shadow: -15px 15px 15px 5px red;
     transition-duration: 1s;
@@ -73,6 +74,10 @@ header h1, h2{
     box-shadow: 0px 6px 9px #ff0000;
     transition-duration: 1s;
 }
+.sombra-footer{
+    box-shadow: 0px 6px 9px #f7f4f4;
+    transition-duration: 1s;
+}
 .sombra-carousel{
     box-shadow: -3px -3px 3px grey;
 }
@@ -81,13 +86,23 @@ header h1, h2{
     transition-duration: 1s;
     transition-delay: 0.3s;
 }
-/* ------ Botones hover ------ */
+.form-control:hover{
+    box-shadow: 1px 1px 1px 2px hsl(0, 24%, 56%) ;
+}
+/* ------ BOTONES HOVER ------ */
 .btn-group-vertical:hover{
-    background-color: red;
+    background-color: #ff0000;
 }
 .btn-dark:hover{
     background-color: white;
     color: red;
+}
+.btn-primary:hover{
+    background-color: #ff0000;
+    border: 2px 2px;
+    color: #ffff00;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(255, 0, 0, 0.637);
 }
 
 /* ----Boton de la busqueda en el nav---- */
@@ -101,17 +116,9 @@ header h1, h2{
 }
 .btn-search:hover{
     background-color: rgba(15, 3, 3, 0.363);
-    color:yellow;
+    color:#ffff00;
     border: 2px white;
     transition-duration: 1s;
-}
-
-.btn-primary:hover{
-    background-color: white;
-    border: 2px 2px;
-    color: black;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(255, 0, 0, 0.637);
 }
 
 
@@ -128,7 +135,7 @@ header h1, h2{
 .carousel-control-prev-icon{
     background-color: black;
 }
-
+/* -------- DIV CON TAMAÑO-UNIVERSAL -------- */
 .tamaño-div{
     height: 150px;
     overflow: hidden;
