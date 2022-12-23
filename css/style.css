@@ -32,6 +32,23 @@ header h1, h2{
 }
 
 /* ----- Animaciones ------ */
+.mover{
+    animation-name: efecto-marcas;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes efecto-marcas {
+    0% {width: 100px;}
+}
+.mover-iframe{
+    animation-name: efecto;
+    animation-duration: 5s;
+    position: relative;
+}
+@keyframes efecto{
+    0% {width:1px;}
+}
 .title-universal{
     text-decoration: underline;
     text-shadow: 1px 1px 2px black, 0 0 25px rgb(136, 46, 5), 0 0 5px white;
@@ -112,19 +129,7 @@ header h1, h2{
     background-color: black;
 }
 
-.mover{
-    animation-name: carrousel;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    position: relative;
-}
-@keyframes carrousel {
-    0% {left:0px;}
-    25% {right:0px;}
-    50% {right:; width: 100px;}
-    75% {left: 0px;}
-    100% {left: 0px;}
-}
 .tamaño-div{
     height: 150px;
+    overflow: hidden;
 }
