@@ -1,22 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
 }
-/* ---- HEADER PARA TODOS LOS HTML ---- */
-header{
-    background-color: #ff0000 ;
-    color: #ffffff;
+
+/* ---- HEADER Y FOOTER PARA TODOS LOS HTML ---- */
+
+header, footer{
+        background-color: #808080c2;
 }
-header h1, h2{
+header h1,
+h2 {
     text-decoration: underline;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(15, 11, 11), 0 0 5px rgb(22, 22, 22);
+    color: #f3e8e8;
 }
- 
-.nav-link{
+
+.nav-link {
     background-color: rgba(15, 3, 3, 0.363);
     border: 2px solid rgb(5, 0, 0);
     border-radius: 10px;
@@ -24,89 +28,97 @@ header h1, h2{
     padding: 5px;
     color: #ffffff;
 }
-
-
-/* ----- COLOR PARA FONDOS ----- */
-.color{
-    background-color: #ff0000;
+/* ------ TITULO -------*/
+.title-universal {
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px #000000, 0 0 25px rgb(163, 136, 124), 0 0 5px rgb(161, 123, 123);
 }
-
 /* ----- ANIMACIONES ------ */
-.mover{
+
+.mover {
     animation-name: efecto-marcas;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     position: relative;
     animation-direction: alternate;
 }
+
 @keyframes efecto-marcas {
-    0% {width: 100px;}
+    0% {
+        width: 100px;
+    }
 }
-.mover-iframe{
+
+.mover-iframe {
     animation-name: efecto;
     animation-duration: 5s;
     position: relative;
 }
-@keyframes efecto{
-    0% {width:1px;}
+
+@keyframes efecto {
+    0% {
+        width: 1px;
+    }
 }
-.title-universal{
-    text-decoration: underline;
-    text-shadow: 1px 1px 2px #000000, 0 0 25px rgb(136, 46, 5), 0 0 5px white;
-}
-.color-title-card{
-    text-shadow: 1px 1px 4px #917070, 0 0 25px rgb(160, 160, 170), 0 0 5px rgb(212, 203, 203);
-}
-.nav-link:hover{
+
+
+.nav-link:hover {
     color: yellow;
     border-radius: 15px;
     transition-duration: 1s;
 }
+
 /* ----- Efecto SOMBRA ---- */
-.sombra-card{
-    box-shadow: -15px 15px 15px 5px red;
+.sombra-card {
+    box-shadow: -7px 7px 15px red;
     transition-duration: 1s;
 }
-.sombra-card-right{
-    box-shadow: 15px 15px 15px 5px red;
+
+.sombra-card-right {
+    box-shadow: 7px 7px 15px red;
 }
-.sombra-a{
-    box-shadow: 0px 6px 9px #ff0000;
+.sombra-a {
+    box-shadow: 0px 6px 9px rgb(61, 60, 60), -0px -6px 9px rgb(49, 44, 44);
     transition-duration: 1s;
 }
-.sombra-footer{
+
+.sombra-footer {
     box-shadow: 0px 6px 9px #f7f4f4;
     transition-duration: 1s;
 }
-.sombra-carousel{
-    box-shadow: -3px -3px 3px grey;
+
+.sombra-carousel {
+    box-shadow: -3px -3px 3px #808080;
 }
-.card:hover{
-    box-shadow: -7px -7px 7px rgb(161, 92, 92);
+
+.card:hover {
+    box-shadow: -7px -7px 20px #000000;
     transition-duration: 1s;
     transition-delay: 0.3s;
 }
-.form-control:hover{
-    box-shadow: 1px 1px 1px 2px hsl(0, 24%, 56%) ;
+
+.form-control:hover {
+    box-shadow: 1px 1px 1px 2px hsl(0, 24%, 56%);
 }
+
 /* ------ BOTONES HOVER ------ */
-.btn-group-vertical:hover{
-    background-color: #ff0000;
+.btn-group-vertical:hover {
+    background-color: #585757;
 }
-.btn-dark:hover{
+
+.btn-dark:hover {
     background-color: white;
-    color: red;
+    color: rgb(10, 10, 10);
 }
-.btn-primary:hover{
-    background-color: #ff0000;
-    border: 2px 2px;
-    color: #ffff00;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(255, 0, 0, 0.637);
+
+@keyframes rotar-boton {
+    0%{transform: rotate(360deg);}
+
+    
 }
 
 /* ----Boton de la busqueda en el nav---- */
-.btn-search{
+.btn-search {
     background-color: rgba(15, 3, 3, 0.363);
     border: 2px solid rgb(5, 0, 0);
     border-radius: 10px;
@@ -114,9 +126,10 @@ header h1, h2{
     padding: 5px;
     color: #ffffff;
 }
-.btn-search:hover{
+
+.btn-search:hover {
     background-color: rgba(15, 3, 3, 0.363);
-    color:#ffff00;
+    color: #ffff00;
     border: 2px white;
     transition-duration: 1s;
 }
@@ -125,18 +138,21 @@ header h1, h2{
 /*  ------------- Carousel ------------ */
 
 /*------ Tamaño para div carousel de mobile------ */
-.width-carousel{
+.width-carousel {
     width: 100%;
 }
+
 /* ---- Fondo para el icono de carousel ---- */
-.carousel-control-next-icon{
+.carousel-control-next-icon {
     background-color: black;
 }
-.carousel-control-prev-icon{
+
+.carousel-control-prev-icon {
     background-color: black;
 }
+
 /* -------- DIV CON TAMAÑO-UNIVERSAL -------- */
-.tamaño-div{
+.tamaño-div {
     height: 150px;
     overflow: hidden;
 }
