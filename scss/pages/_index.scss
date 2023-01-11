@@ -1,0 +1,27 @@
+/* ---- LOGOS MARCA CON ANIMACION ----- */
+div {
+    .tamaño-div {
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .sombra-card {
+        box-shadow: -7px 7px 15px #ff0000;
+        transition-duration: 1s;
+    }
+
+    .mover {
+        animation-name: efecto-marcas;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: relative;
+        animation-direction: alternate;
+
+        @keyframes efecto-marcas {
+            0% {
+                width: 100px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,45 @@
+/* ---- HEADER PARA TODOS LOS HTML ---- */
+
+
+header {
+    background-color: #808080c2;
+
+    h1,
+    h2 {
+        text-decoration: underline;
+        text-shadow: $sombra-text;
+        color: $color-primario;
+    }
+
+    .nav-link {
+        background-color: rgba(15, 3, 3, 0.363);
+        border: 2px solid rgb(5, 0, 0);
+        border-radius: 10px;
+        margin: 3px 7px;
+        padding: 5px;
+        color: $color-primario;
+
+        &:hover {
+            color: yellow;
+            border-radius: 15px;
+            transition-duration: 1s;
+        }
+
+    }
+
+    .btn-search {
+        background-color: rgba(15, 3, 3, 0.363);
+        border: 2px solid rgb(5, 0, 0);
+        border-radius: 10px;
+        margin: 3px 7px;
+        padding: 5px;
+        color: $color-primario;
+
+        &:hover {
+            background-color: rgba(15, 3, 3, 0.363);
+            color: #ffff00;
+            border: 2px $color-primario;
+            transition-duration: 1s;
+        }
+    }
+}
