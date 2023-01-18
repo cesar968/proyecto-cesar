@@ -1,4 +1,17 @@
-.btn-dark:hover {
+/* ------Boton Dark------  */
+.btn-dark {
+
+  &:hover {
     background-color: $color-primario;
     color:$color-secundario;
   }
+}
+div{
+    .btn-card{
+      border: 1px solid black;
+      border-radius: 20px;
+      background-color: $color-secundario;
+      color: $color-primario;
+    }
+}
+

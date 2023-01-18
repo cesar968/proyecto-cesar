@@ -14,10 +14,10 @@ div {
 }
 
 section {
-    h3, h1 {
+    h1, h2 {
         text-decoration: underline;
         text-shadow: $sombra-text;
-        color: $color-primario;
+        color: $color-secundario;
     }
 
     .card{

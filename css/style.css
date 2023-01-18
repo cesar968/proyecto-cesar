@@ -21,9 +21,9 @@ header h2 {
   color: #ffffff;
 }
 header .nav-link {
-  background-color: rgba(15, 3, 3, 0.363);
-  border: 2px solid rgb(5, 0, 0);
-  border-radius: 10px;
+  background-color: #000000;
+  border: 2px solid #000000;
+  border-radius: 20px;
   margin: 3px 7px;
   padding: 5px;
   color: #ffffff;
@@ -34,15 +34,15 @@ header .nav-link:hover {
   transition-duration: 1s;
 }
 header .btn-search {
-  background-color: rgba(15, 3, 3, 0.363);
+  background-color: #000000;
   border: 2px solid rgb(5, 0, 0);
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 3px 7px;
   padding: 5px;
   color: #ffffff;
 }
 header .btn-search:hover {
-  background-color: rgba(15, 3, 3, 0.363);
+  background-color: #000000;
   color: #ffff00;
   border: 2px #ffffff;
   transition-duration: 1s;
@@ -59,10 +59,10 @@ div .carousel-control-prev-icon {
   background-color: black;
 }
 
-section h3, section h1 {
+section h1, section h2 {
   text-decoration: underline;
   text-shadow: 1px 1px 2px #000000, 0 0 25px rgb(15, 11, 11), 0 0 5px rgb(22, 22, 22);
-  color: #ffffff;
+  color: #000000;
 }
 section .card {
   box-shadow: 0px 6px 9px rgb(61, 60, 60), 0px -6px 9px rgb(49, 44, 44);
@@ -75,7 +75,7 @@ section .card:hover {
 }
 
 /* ------------- SOBRE NOSOTROS HTML y CONTACTO ---------------- */
-section .sombra-a {
+section .sombra-a, section .sombra-marcas, section .sombra-productos {
   box-shadow: 0px 6px 9px rgb(61, 60, 60), 0px -6px 9px rgb(49, 44, 44);
 }
 
@@ -83,13 +83,40 @@ section .btn-group-vertical:hover {
   background-color: #585757;
 }
 
+/* ------Boton Dark------  */
 .btn-dark:hover {
   background-color: #ffffff;
   color: #000000;
 }
 
+div .btn-card {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
 footer {
   background-color: rgba(128, 128, 128, 0.7607843137);
+}
+
+div .navbar-collapse .form-control {
+  border-radius: 20px;
+  border-color: #000000;
+  background-color: rgb(170, 132, 132);
+  box-shadow: none;
+  color: white;
+}
+div .navbar-collapse .form-control:hover {
+  background-color: rgb(212, 196, 196);
+  transition: 1.2s;
+}
+div .navbar-collapse .form-control:focus {
+  color: yellow;
+}
+div .navbar-collapse .form-control::placeholder {
+  color: white;
+  text-align: center;
 }
 
 /* ---- LOGOS MARCA CON ANIMACION ----- */
@@ -112,6 +139,70 @@ div .mover {
   0% {
     width: 100px;
   }
+}
+
+.sombra-productos {
+  padding: 10px;
+}
+.sombra-productos h1 {
+  color: black;
+}
+.sombra-productos div h3 {
+  color: black;
+}
+.sombra-productos .card {
+  padding: 10px;
+}
+.sombra-productos h3 {
+  text-shadow: 1px 1px 2px #000000, 0 0 25px rgb(15, 11, 11), 0 0 5px rgb(22, 22, 22);
+  text-decoration: underline;
+}
+
+.sombra-marcas {
+  padding: 10px;
+}
+
+div .sombra-a h1, div .sombra-productos h1, div .sombra-marcas h1 {
+  color: yellow;
+}
+
+/* ------  ANIMACION IFRAMES ------  */
+.container .bakcground-contacto {
+  background-color: #000000;
+}
+.container .sombra-a h1, .container .sombra-productos h1, .container .sombra-marcas h1 {
+  color: black;
+}
+.container .sombra-a .form-control, .container .sombra-productos .form-control, .container .sombra-marcas .form-control {
+  background-color: #000000;
+  border-radius: 0%;
+  border-bottom: 1px solid #ffffff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #ffffff;
+  resize: none;
+}
+.container .sombra-a .form-control:hover, .container .sombra-productos .form-control:hover, .container .sombra-marcas .form-control:hover {
+  border-bottom: 1px solid red;
+}
+.container .sombra-a .form-control:focus, .container .sombra-productos .form-control:focus, .container .sombra-marcas .form-control:focus {
+  border: 1px red solid;
+  box-shadow: none;
+}
+.container .sombra-a .form-control::placeholder, .container .sombra-productos .form-control::placeholder, .container .sombra-marcas .form-control::placeholder {
+  color: #ffffff;
+}
+.container .sombra-a .btn-dark, .container .sombra-productos .btn-dark, .container .sombra-marcas .btn-dark {
+  background-color: #000000;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 0%;
+}
+.container .sombra-a .btn-dark:hover, .container .sombra-productos .btn-dark:hover, .container .sombra-marcas .btn-dark:hover {
+  border-bottom: 1px solid red;
+  color: red;
 }
 
 iframe {

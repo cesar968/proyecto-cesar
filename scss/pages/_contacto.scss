@@ -1,10 +1,55 @@
+/* ------  ANIMACION IFRAMES ------  */
+.container {
+    .bakcground-contacto {
+        background-color: $color-secundario;
+    }
+
+    .sombra-a {
+        h1{
+            color: black;
+        }
+        .form-control {
+            background-color: $color-secundario;
+            border-radius: 0%;
+            border-bottom: 1px solid $color-primario;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            color: $color-primario;
+            resize: none;
+            &:hover{
+                border-bottom: 1px solid red;
+            }
+            &:focus{
+                border: 1px red solid;
+                box-shadow: none;
+            }
+            &::placeholder{
+                color: $color-primario;
+            }
+        }
+        .btn-dark{
+            background-color: $color-secundario;
+            border: none;
+            border-bottom: 1px solid $color-primario;
+            color: $color-primario;
+            border-radius: 0%;
+            &:hover{
+                border-bottom: 1px solid red;
+                color: red;
+            }
+        }
+    }
+}
+
 iframe {
     animation-name: mover;
     animation-duration: 5s;
     position: relative;
+
     @keyframes mover {
         0% {
             width: 1px;
         }
-      }
-  }
+    }
+}

@@ -1,0 +1,21 @@
+div{
+    .navbar-collapse{
+        .form-control{
+            border-radius: 20px;
+            border-color: $color-secundario;
+            background-color: rgb(170, 132, 132);
+            box-shadow: none;
+            color: white;
+            &:hover{
+                background-color: rgb(212, 196, 196);
+                transition: 1.2s;
+            }
+            &:focus{
+                color: yellow;
+            }
+            &::placeholder{color: white;
+                            text-align: center;
+            }
+        }
+    }
+}
