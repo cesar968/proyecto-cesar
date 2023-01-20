@@ -1,12 +1,9 @@
 .sombra-productos{
     @extend .sombra-a;
     padding: 10px;
-    h1{
-        color: black;
-    }
     div{
         h3{
-            color: black;
+            color: $color-secundario;
         }
     }
     .card{
@@ -16,4 +13,9 @@
         text-shadow: $sombra-text;
         text-decoration: underline;
     }
+
+    .btn-group-vertical:hover {
+        background-color: #585757;
+      }
+
 }

@@ -1,3 +1,8 @@
 footer {
-    background-color: #808080c2;
+    background-color: $color-principal;
+
+        .logo-footer{
+            width: 150px;
+        }
+
 }

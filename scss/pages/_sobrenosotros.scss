@@ -1,5 +1,10 @@
-div{
-    .sombra-a{
-        h1{color: yellow}
+.size-nosotros {
+    background-color: $color-principal;
+    h1{
+        color: $color-primario;
+    }
+    p{
+        text-shadow: 5px 5px 6px $color-secundario;
+        color: $color-primario;
     }
 }

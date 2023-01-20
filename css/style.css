@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 a {
@@ -12,7 +13,7 @@ a {
 
 /* ---- HEADER PARA TODOS LOS HTML ---- */
 header {
-  background-color: rgba(128, 128, 128, 0.7607843137);
+  background-color: #808080;
 }
 header h1,
 header h2 {
@@ -79,10 +80,6 @@ section .sombra-a, section .sombra-marcas, section .sombra-productos {
   box-shadow: 0px 6px 9px rgb(61, 60, 60), 0px -6px 9px rgb(49, 44, 44);
 }
 
-section .btn-group-vertical:hover {
-  background-color: #585757;
-}
-
 /* ------Boton Dark------  */
 .btn-dark:hover {
   background-color: #ffffff;
@@ -97,7 +94,10 @@ div .btn-card {
 }
 
 footer {
-  background-color: rgba(128, 128, 128, 0.7607843137);
+  background-color: #808080;
+}
+footer .logo-footer {
+  width: 150px;
 }
 
 div .navbar-collapse .form-control {
@@ -144,11 +144,8 @@ div .mover {
 .sombra-productos {
   padding: 10px;
 }
-.sombra-productos h1 {
-  color: black;
-}
 .sombra-productos div h3 {
-  color: black;
+  color: #000000;
 }
 .sombra-productos .card {
   padding: 10px;
@@ -157,13 +154,31 @@ div .mover {
   text-shadow: 1px 1px 2px #000000, 0 0 25px rgb(15, 11, 11), 0 0 5px rgb(22, 22, 22);
   text-decoration: underline;
 }
+.sombra-productos .btn-group-vertical:hover {
+  background-color: #585757;
+}
 
 .sombra-marcas {
   padding: 10px;
 }
+.sombra-marcas .content-around {
+  display: flex;
+  justify-content: space-around;
+}
+.sombra-marcas .div-marcas {
+  width: 320px;
+  height: 320px;
+}
 
-div .sombra-a h1, div .sombra-productos h1, div .sombra-marcas h1 {
-  color: yellow;
+.size-nosotros {
+  background-color: #808080;
+}
+.size-nosotros h1 {
+  color: #ffffff;
+}
+.size-nosotros p {
+  text-shadow: 5px 5px 6px #000000;
+  color: #ffffff;
 }
 
 /* ------  ANIMACION IFRAMES ------  */
