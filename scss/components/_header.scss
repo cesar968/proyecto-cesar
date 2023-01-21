@@ -4,12 +4,13 @@
 header {
     background-color: $color-principal;
 
-    h1,
-    h2 {
+    h1, .p-logo
+    {
         text-decoration: underline;
         text-shadow: $sombra-text;
         color: $color-primario;
     }
+
 
     .nav-link {
         background-color: $color-secundario;

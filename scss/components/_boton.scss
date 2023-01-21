@@ -12,6 +12,22 @@ div{
       border-radius: 20px;
       background-color: $color-secundario;
       color: $color-primario;
+      
+        &:hover{
+          background-color: $color-primario;
+          color: $color-secundario;
+          border: $color-secundario 1px;
+          box-shadow: 1px 1px 20px $color-primario, -1px -1px 20px $color-primario;
+        }
+      
+    }
+    .btn-a{
+      @extend .btn-card;
+      &:hover{
+        box-shadow: 1px 1px 20px $color-secundario, -1px -1px 20px $color-secundario;
+      }
     }
 }
-
+.btn-group-vertical:hover {
+  background-color: #585757;
+}

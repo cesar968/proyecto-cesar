@@ -15,8 +15,7 @@ a {
 header {
   background-color: #808080;
 }
-header h1,
-header h2 {
+header h1, header .p-logo {
   text-decoration: underline;
   text-shadow: 1px 1px 2px #000000, 0 0 25px rgb(15, 11, 11), 0 0 5px rgb(22, 22, 22);
   color: #ffffff;
@@ -60,10 +59,15 @@ div .carousel-control-prev-icon {
   background-color: black;
 }
 
-section h1, section h2 {
+section h1 {
   text-decoration: underline;
+}
+section h1, section h2 {
   text-shadow: 1px 1px 2px #000000, 0 0 25px rgb(15, 11, 11), 0 0 5px rgb(22, 22, 22);
   color: #000000;
+}
+section h3 {
+  font-style: italic;
 }
 section .card {
   box-shadow: 0px 6px 9px rgb(61, 60, 60), 0px -6px 9px rgb(49, 44, 44);
@@ -73,6 +77,18 @@ section .card:hover {
   box-shadow: -7px -7px 20px #000000;
   transition-duration: 1s;
   transition-delay: 0.3s;
+}
+section .card .card-body {
+  width: 90%;
+  margin: 10px;
+  color: #ffffff;
+  background-color: #808080;
+  text-shadow: 1px 1px 2px #000000, 0 0 25px rgb(15, 11, 11), 0 0 5px rgb(22, 22, 22);
+  border-radius: 30px;
+  padding: 10px;
+}
+section .card .card-body li {
+  list-style: none;
 }
 
 /* ------------- SOBRE NOSOTROS HTML y CONTACTO ---------------- */
@@ -86,11 +102,24 @@ section .sombra-a, section .sombra-marcas, section .sombra-productos {
   color: #000000;
 }
 
-div .btn-card {
+div .btn-card, div .btn-a {
   border: 1px solid black;
   border-radius: 20px;
   background-color: #000000;
   color: #ffffff;
+}
+div .btn-card:hover, div .btn-a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: #000000 1px;
+  box-shadow: 1px 1px 20px #ffffff, -1px -1px 20px #ffffff;
+}
+div .btn-a:hover {
+  box-shadow: 1px 1px 20px #000000, -1px -1px 20px #000000;
+}
+
+.btn-group-vertical:hover {
+  background-color: #585757;
 }
 
 footer {
@@ -144,18 +173,8 @@ div .mover {
 .sombra-productos {
   padding: 10px;
 }
-.sombra-productos div h3 {
-  color: #000000;
-}
 .sombra-productos .card {
   padding: 10px;
-}
-.sombra-productos h3 {
-  text-shadow: 1px 1px 2px #000000, 0 0 25px rgb(15, 11, 11), 0 0 5px rgb(22, 22, 22);
-  text-decoration: underline;
-}
-.sombra-productos .btn-group-vertical:hover {
-  background-color: #585757;
 }
 
 .sombra-marcas {
@@ -168,6 +187,11 @@ div .mover {
 .sombra-marcas .div-marcas {
   width: 320px;
   height: 320px;
+}
+.sombra-marcas div .card-body h2 {
+  text-shadow: none;
+  text-decoration: none;
+  color: #000000;
 }
 
 .size-nosotros {

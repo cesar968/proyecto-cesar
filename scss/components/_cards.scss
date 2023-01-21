@@ -14,11 +14,17 @@ div {
 }
 
 section {
-    h1, h2 {
+    h1{
         text-decoration: underline;
+    }
+    h1, h2{
         text-shadow: $sombra-text;
         color: $color-secundario;
     }
+    h3{
+        font-style: italic;
+    }
+    
 
     .card{
         box-shadow: $sombra-card;
@@ -27,6 +33,20 @@ section {
             box-shadow: -7px -7px 20px #000000;
             transition-duration: 1s;
             transition-delay: 0.3s;
+        }
+        .card-body{
+            width: 90%;
+            margin: 10px;
+            color: $color-primario;
+            background-color: $color-principal;
+            text-shadow: $sombra-text;
+            border-radius: 30px;
+            padding: 10px;
+            li{
+                list-style: none;
+            }
+
+
         }
     }
 
