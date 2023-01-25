@@ -39,11 +39,13 @@
 <body>
     <!--------- Encabezado con barra de navegacion --------->
 
-    <header>
-        <div class="container mb-3 pt-3">
-        <div class="d-flex justify-content-center text-center">
-            <a href="./index.html"><img src="./imagenes/logo-ferreteria.png" alt="Logo de la ferretería"><h1 class="h1 p-logo">Ferretería Cesar</h1></a>
-        </div>
+    <header class="sticky-top">
+        <div class="container mb-3 pt-3 sticky-top">
+            <div class="d-flex justify-content-center text-center mt-3">
+                <a href="./index.html">
+                    <h1 class="h1 p-logo">Ferretería Cesar</h1>
+                </a>
+            </div>
             <div>
                 <nav class="navbar navbar-expand-lg" role="navigation">
                     <div class="container-fluid">
@@ -72,8 +74,10 @@
                                 </li>
                             </ul>
                             <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" role="search">
-                                <button class="btn btn-outline-success btn-search" type="submit" role="button">Search</button>
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                                    role="search">
+                                <button class="btn btn-outline-success btn-search" type="submit"
+                                    role="button">Search</button>
                             </form>
                         </div>
                     </div>
@@ -85,8 +89,8 @@
     <main class="mb-5">
         <!-- OFERTAS -->
         <div class="container">
-            <section class="container d-lg-none mt-4" >
-                <div class="d-flex justify-content-center flex-column sombra-carousel">
+            <section class="container d-lg-none mt-4">
+                <article class="d-flex justify-content-center flex-column sombra-carousel">
                     <h2 class="text-center fw-bold" data-aos="zoom-in-up" data-aos-duration="1200">Ofertas</h2>
                     <div id="carouselExampleIndicators" class="carousel slide width-carousel" data-bs-ride="true">
                         <div class="carousel-indicators">
@@ -106,15 +110,18 @@
                             </div>
                             <div class="carousel-item">
                                 <img src="./imagenes/imagenes-herramientas_electricas/fresadora.jpg"
-                                    class="d-block w-100" alt="Fresadora eléctrica, para dar formas a la madera" role="img">
+                                    class="d-block w-100" alt="Fresadora eléctrica, para dar formas a la madera"
+                                    role="img">
                             </div>
                             <div class="carousel-item">
                                 <img src="./imagenes/imagenes-herramientas_electricas/pistola-calor.jpg"
-                                    class="d-block w-100" alt="Pistola de calor, para embalar, sacar pintura, secar" role="img">
+                                    class="d-block w-100" alt="Pistola de calor, para embalar, sacar pintura, secar"
+                                    role="img">
                             </div>
                             <div class="carousel-item">
                                 <img src="./imagenes/imagenes-herramientas_electricas/presurizadora.jpg"
-                                    class="d-block w-100" alt="Bomba presurizadora para aumentar la presión del agua" role="img">
+                                    class="d-block w-100" alt="Bomba presurizadora para aumentar la presión del agua"
+                                    role="img">
                             </div>
                         </div>
                         <button class="carousel-control-prev color-icon-carousel" type="button"
@@ -129,14 +136,14 @@
                         </button>
                     </div>
                     <div class="d-flex justify-content-center mb-3">
-                        <a href="./pages/ofertas.html" class="btn btn-a mt-3" data-aos="zoom-in-up"
+                        <a href="" class="btn btn-a mt-3" data-aos="zoom-in-up"
                             data-aos-duration="1200">Ver ofertas</a>
                     </div>
-                </div>
+                </article>
             </section>
             <!-- NOVEDADES -->
             <section class="container d-lg-none mt-4">
-                <div class=" d-flex justify-content-center flex-column sombra-carousel ">
+                <article class=" d-flex justify-content-center flex-column sombra-carousel ">
                     <h2 class="text-center fw-bold" data-aos="zoom-in-up" data-aos-duration="1200">Novedades</h2>
                     <div id="carouselnovedades" class="carousel slide width-carousel" data-bs-ride="true">
                         <div class="carousel-indicators">
@@ -152,12 +159,14 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="./imagenes/imagenes-herramientas_manuales/llaves-torx.jpg"
-                                    class="d-block w-100" alt="Llave torx, para sacar o poner tornillos con esa cabeza" role="img">
+                                    class="d-block w-100" alt="Llave torx, para sacar o poner tornillos con esa cabeza"
+                                    role="img">
                             </div>
                             <div class="carousel-item">
                                 <picture>
                                     <img src="./imagenes/imagenes-herramientas_manuales/arco-extensible.jpg"
-                                        class="d-block w-100" alt="Arco de sierra extensible para mejores medidas" role="img">
+                                        class="d-block w-100" alt="Arco de sierra extensible para mejores medidas"
+                                        role="img">
                                 </picture>
                             </div>
                             <div class="carousel-item">
@@ -166,7 +175,8 @@
                             </div>
                             <div class="carousel-item">
                                 <img src="./imagenes/imagenes-herramientas_electricas/rotopercutor.jpg"
-                                    class="d-block w-100" alt="Rotopercutor para tirar paredes o sacar revoque" role="img">
+                                    class="d-block w-100" alt="Rotopercutor para tirar paredes o sacar revoque"
+                                    role="img">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselnovedades"
@@ -181,14 +191,14 @@
                         </button>
                     </div>
                     <div class="d-flex justify-content-center mb-2">
-                        <a href="./pages/novedades.html" class="btn btn-a mt-3" data-aos="zoom-in-up"
+                        <a href="" class="btn btn-a mt-3" data-aos="zoom-in-up"
                             data-aos-duration="1200">Ver Novedades</a>
                     </div>
-                </div>
+                </article>
             </section>
             <!-- LO MAS VENDIDO -->
             <section class="container d-lg-none mt-4">
-                <div class=" d-flex justify-content-center flex-column sombra-carousel ">
+                <article class=" d-flex justify-content-center flex-column sombra-carousel ">
                     <h2 class="text-center fw-bold" data-aos="zoom-in-up" data-aos-duration="1200">Lo mas vendido</h2>
                     <div id="carousellomasvendido" class="carousel slide width-carousel" data-bs-ride="true">
                         <div class="carousel-indicators">
@@ -231,10 +241,10 @@
                         </button>
                     </div>
                     <div class="d-flex justify-content-center mb-2">
-                        <a href="./pages/lo-mas-vendido.html" class="btn btn-a mt-3" data-aos="zoom-in-up"
+                        <a href="" class="btn btn-a mt-3" data-aos="zoom-in-up"
                             data-aos-duration="1200">Ver Productos</a>
                     </div>
-                </div>
+                </article>
             </section>
             <!-------- Desktop --------->
             <div class=" container d-none d-lg-flex sombra-card tamaño-div">
@@ -264,7 +274,7 @@
             <!-- Ofertas -->
             <section class="row mt-5 p-1 d-none d-lg-flex justify-content-center text-center">
                 <h2 class="text-center mb-3 ">Ofertas</h2>
-                <div class="card col-lg-2 align-items-center me-2 sombra-a mb-2" data-aos="zoom-in"
+                <article class="card col-lg-2 align-items-center me-2 sombra-a mb-2" data-aos="zoom-in"
                     data-aos-duration="1200" style="width: 14rem">
                     <img src="./imagenes/imagenes-herramientas_electricas/caladora.jpg"
                         class="card-img-top img-fluid mt-1" alt="Sierra caladora, trabajos finos en madera">
@@ -274,11 +284,11 @@
                             <span>$10000</span>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a href="./pages/ofertas.html" class="btn btn-card mt-3">Visitar</a>
+                            <a href="" class="btn btn-card mt-3">Visitar</a>
                         </div>
                     </div>
-                </div>
-                <div class="card col-lg-2 align-items-center text-center me-2 sombra-a mb-2" data-aos="zoom-in"
+                </article>
+                <article class="card col-lg-2 align-items-center text-center me-2 sombra-a mb-2" data-aos="zoom-in"
                     data-aos-duration="1200" style="width: 14rem">
                     <img src="./imagenes/imagenes-herramientas_electricas/fresadora.jpg"
                         class="card-img-top img-fluid mt-1" alt="Fresadora eléctrica, para dar formas a la madera">
@@ -288,11 +298,11 @@
                             <span>$10000</span>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a href="./pages/ofertas.html" class="btn btn-card mt-3">Visitar</a>
+                            <a href="" class="btn btn-card mt-3">Visitar</a>
                         </div>
                     </div>
-                </div>
-                <div class="card col-lg-2 align-items-center text-center me-2 sombra-a mb-2" data-aos="zoom-in"
+                </article>
+                <article class="card col-lg-2 align-items-center text-center me-2 sombra-a mb-2" data-aos="zoom-in"
                     data-aos-duration="1200" style="width: 14rem">
                     <img src="./imagenes/imagenes-herramientas_electricas/pistola-calor.jpg"
                         class="card-img-top img-fluid mt-1" alt="Pistola de calor, para embalar, sacar pintura, secar">
@@ -302,11 +312,11 @@
                             <span class="tex">$10000</span>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a href="./pages/ofertas.html" class="btn btn-card mt-3">Visitar</a>
+                            <a href="" class="btn btn-card mt-3">Visitar</a>
                         </div>
                     </div>
-                </div>
-                <div class="card col-lg-2 align-items-center text-center me-2 sombra-a mb-2 " data-aos="zoom-in"
+                </article>
+                <article class="card col-lg-2 align-items-center text-center me-2 sombra-a mb-2 " data-aos="zoom-in"
                     data-aos-duration="1200" style="width: 14rem">
                     <img src="./imagenes/imagenes-herramientas_electricas/presurizadora.jpg"
                         class="card-img-top img-fluid mt-1" alt="Bomba presurizadora para aumentar la presión del agua">
@@ -316,15 +326,15 @@
                             <span>$10000</span>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a href="./pages/ofertas.html" class="btn btn-card mt-3">Visitar</a>
+                            <a href="" class="btn btn-card mt-3">Visitar</a>
                         </div>
                     </div>
-                </div>
+                </article>
             </section>
             <!-- NOVEDADES -->
             <section class="row mt-5 p-1 d-none d-lg-flex justify-content-center text-center ">
                 <h2 class="text-center mb-3 ">Novedades</h2>
-                <div class="card col-lg-2 me-2 align-items-center text-center sombra-a mb-2" data-aos="zoom-in"
+                <article class="card col-lg-2 me-2 align-items-center text-center sombra-a mb-2" data-aos="zoom-in"
                     data-aos-duration="1200" style="width: 14rem">
                     <img src="./imagenes/imagenes-herramientas_manuales/llaves-torx.jpg"
                         class="card-img-top img-fluid mt-1"
@@ -335,11 +345,11 @@
                             <span>$10000</span>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a href="./pages/novedades.html" class="btn btn-card mt-3">Visitar</a>
+                            <a href="" class="btn btn-card mt-3">Visitar</a>
                         </div>
                     </div>
-                </div>
-                <div class="card col-lg-2 me-2 align-items-center text-center sombra-a mb-2" data-aos="zoom-in"
+                </article>
+                <article class="card col-lg-2 me-2 align-items-center text-center sombra-a mb-2" data-aos="zoom-in"
                     data-aos-duration="1200" style="width: 14rem">
                     <img src="./imagenes/imagenes-herramientas_manuales/arco-extensible.jpg"
                         class="card-img-top img-fluid mt-1" alt="Arco de sierra extensible para mejores medidas">
@@ -349,11 +359,11 @@
                             <span>$10000</span>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a href="./pages/novedades.html" class="btn btn-card mt-3">Visitar</a>
+                            <a href="" class="btn btn-card mt-3">Visitar</a>
                         </div>
                     </div>
-                </div>
-                <div class="card col-lg-2 me-2 align-items-center text-center sombra-a mb-2" data-aos="zoom-in"
+                </article>
+                <article class="card col-lg-2 me-2 align-items-center text-center sombra-a mb-2" data-aos="zoom-in"
                     data-aos-duration="1200" style="width: 14rem">
                     <img src="./imagenes/imagenes-herramientas_manuales/machete.png" class="card-img-top img-fluid mt-1"
                         alt="Machete para desmontar o cortar">
@@ -363,11 +373,11 @@
                             <span>$10000</span>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a href="./pages/novedades.html" class="btn btn-card mt-3">Visitar</a>
+                            <a href="" class="btn btn-card mt-3">Visitar</a>
                         </div>
                     </div>
-                </div>
-                <div class="card col-lg-2 me-2 align-items-center text-center sombra-a mb-2" data-aos="zoom-in"
+                </article>
+                <article class="card col-lg-2 me-2 align-items-center text-center sombra-a mb-2" data-aos="zoom-in"
                     data-aos-duration="1200" style="width: 14rem">
                     <img src="./imagenes/imagenes-herramientas_electricas/rotopercutor.jpg"
                         class="card-img-top img-fluid mt-1" alt="Rotopercutor para tirar paredes o sacar revoque">
@@ -377,15 +387,15 @@
                             <span>$10000</span>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a href="./pages/novedades.html" class="btn btn-card mt-3">Visitar</a>
+                            <a href="" class="btn btn-card mt-3">Visitar</a>
                         </div>
                     </div>
-                </div>
+                </article>
             </section>
             <!-- LO MAS VENDIDO -->
             <section class="row mt-5 p-1 d-none d-lg-flex justify-content-center text-center">
                 <h2 class="text-center mb-3 ">Lo mas vendido</h2>
-                <div class="card col-lg-2 me-2 align-items-center text-center sombra-a mb-2" data-aos="zoom-in"
+                <article class="card col-lg-2 me-2 align-items-center text-center sombra-a mb-2" data-aos="zoom-in"
                     data-aos-duration="1200" style="width: 14rem">
                     <img src="./imagenes/imagenes-bazar/cuchilla-acero.jpg" class="card-img-top img-fluid mt-1"
                         alt="Cuchilla de cocina">
@@ -395,11 +405,11 @@
                             <span>$10000</span>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a href="./pages/lo-mas-vendido.html" class="btn btn-card mt-3">Visitar</a>
+                            <a href="" class="btn btn-card mt-3">Visitar</a>
                         </div>
                     </div>
-                </div>
-                <div class="card col-lg-2 me-2 align-items-center text-center sombra-a mb-2" data-aos="zoom-in"
+                </article>
+                <article class="card col-lg-2 me-2 align-items-center text-center sombra-a mb-2" data-aos="zoom-in"
                     data-aos-duration="1200" style="width: 14rem">
                     <img src="./imagenes/imagenes-herramientas_manuales/pico-loro.jpg"
                         class="card-img-top img-fluid mt-1" alt="Pinza para aflojar, agarrar, ajustar">
@@ -409,11 +419,11 @@
                             <span>$10000</span>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a href="./pages/lo-mas-vendido.html" class="btn btn-card mt-3">Visitar</a>
+                            <a href="" class="btn btn-card mt-3">Visitar</a>
                         </div>
                     </div>
-                </div>
-                <div class="card col-lg-2 me-2 align-items-center text-center sombra-a mb-2" data-aos="zoom-in"
+                </article>
+                <article class="card col-lg-2 me-2 align-items-center text-center sombra-a mb-2" data-aos="zoom-in"
                     data-aos-duration="1200" style="width: 14rem">
                     <img src="./imagenes/imagenes-herramientas_manuales/serrucho-yeso.jpg"
                         class="card-img-top img-fluid mt-1" alt="serrucho para cortar durlock">
@@ -423,11 +433,11 @@
                             <span>$10000</span>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a href="./pages/lo-mas-vendido.html" class="btn btn-card mt-3">Visitar</a>
+                            <a href="" class="btn btn-card mt-3">Visitar</a>
                         </div>
                     </div>
-                </div>
-                <div class="card col-lg-2 me-2 align-items-center text-center sombra-a mb-2" data-aos="zoom-in"
+                </article>
+                <article class="card col-lg-2 me-2 align-items-center text-center sombra-a mb-2" data-aos="zoom-in"
                     data-aos-duration="1200" style="width: 14rem">
                     <img src="./imagenes/imagenes-electricidad/lampara-led.jpg" class="card-img-top img-fluid mt-1"
                         alt="Lampara led en varias potencias">
@@ -437,10 +447,10 @@
                             <span>$10000</span>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a href="./pages/lo-mas-vendido.html" class="btn btn-card mt-3">Visitar</a>
+                            <a href="" class="btn btn-card mt-3">Visitar</a>
                         </div>
                     </div>
-                </div>
+                </article>
             </section>
         </div>
     </main>
