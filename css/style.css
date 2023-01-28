@@ -90,6 +90,21 @@ section .card .card-body {
 section .card .card-body li {
   list-style: none;
 }
+section .card .galeria-productos {
+  width: 300px;
+}
+section .card .galeria-productos img {
+  width: 0px;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+section .card .galeria-productos img:hover {
+  cursor: crosshair;
+  width: 150px;
+  opacity: 1;
+  filter: contrast(120%);
+}
 
 /* ------------- SOBRE NOSOTROS HTML y CONTACTO ---------------- */
 section .sombra-a, section .sombra-marcas, section .sombra-productos {
