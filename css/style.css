@@ -224,7 +224,7 @@ div .mover {
   color: #ffffff;
 }
 .size-nosotros p {
-  text-shadow: 5px 5px 6px #000000;
+  text-shadow: 1px 1px 2px #000000;
   color: #ffffff;
 }
 
@@ -257,14 +257,13 @@ div .mover {
 }
 .container .sombra-a .btn-dark, .container .sombra-productos .btn-dark, .container .sombra-marcas .btn-dark {
   background-color: #000000;
-  border: none;
-  border-bottom: 1px solid #ffffff;
+  border: 1px solid #ffffff;
   color: #ffffff;
   border-radius: 0%;
 }
 .container .sombra-a .btn-dark:hover, .container .sombra-productos .btn-dark:hover, .container .sombra-marcas .btn-dark:hover {
-  border-bottom: 1px solid red;
-  color: red;
+  border: none;
+  box-shadow: 1px 1px 16px #ff0000, -1px -1px 16px #ff0000;
 }
 
 iframe {

@@ -30,13 +30,12 @@
         }
         .btn-dark{
             background-color: $color-secundario;
-            border: none;
-            border-bottom: 1px solid $color-primario;
+            border: 1px solid $color-primario;
             color: $color-primario;
             border-radius: 0%;
             &:hover{
-                border-bottom: 1px solid red;
-                color: red;
+                border: none;
+                box-shadow: 1px 1px 16px #ff0000, -1px -1px 16px #ff0000;
             }
         }
     }
